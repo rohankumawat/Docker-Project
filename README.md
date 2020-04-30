@@ -11,16 +11,15 @@ Using compose is simply a three steps process:
   1. Define your app's environment with a Dockerfile so it can be reproduced anywhere.
   2. Define the services that make up your app in docker-compose.yml so they can be run together in an isolated environment.
   3. Lastly, run docker-compose up and Compose will start and run your entire app.
+## Requirements 
+Make sure that you have the latest version of Docker and Docker Compose installed on your machine. 
+If it isn't installed and you don't know how to install it, click [here](https://docs.docker.com/).
 In this project:
   1. Build the image.
   2. Run MySQL. 
   3. Run the image.
 I've picked up a content management system 
 docker-compose.yml file will setup Wordpress and MySQL with a single command.
-## Requirements 
-Make sure that you have the latest version of Docker and Docker Compose installed on your machine. 
-If it isn't installed and you don't know how to install it, click [here](https://docs.docker.com/).
-
 ## Wordpress ![Icon of WordPress](https://img.icons8.com/metro/26/000000/wordpress.png) and MySQL ![Icon of MySQL](https://img.icons8.com/dotty/32/000000/mysql.png)
 WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. 
 To run WordPress locally, you don't need Apache, MySQL server, XAMPP, Wamp and Mamp. All you need is Docker
