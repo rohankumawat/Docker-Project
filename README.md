@@ -1,6 +1,10 @@
-## Docker
+## Docker 
+![Image of Docker](https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png)
+
 Docker is an open-source tool designed to make it easier, deploy, and run applications by using containers. It is a tool that is designed to benefit both developers and system administrators. 
 ## Docker Compose
+![Image of Docker Compose](https://raw.githubusercontent.com/docker/compose/master/logo.png)
+
 Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a Compose file to configure your application's services. 
 It is great for development, testing, and staging environments.
 Using compose is simply a three steps process:
@@ -17,7 +21,7 @@ docker-compose.yml file will setup Wordpress and MySQL with a single command.
 Make sure that you have the latest version of Docker and Docker Compose installed on your machine. 
 If it isn't installed and you don't know how to install it, click [here](https://docs.docker.com/).
 
-## Wordpress and MySQL
+## Wordpress ![Icon of WordPress](https://img.icons8.com/metro/26/000000/wordpress.png) and MySQL ![Icon of MySQL](https://img.icons8.com/dotty/32/000000/mysql.png)
 WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. 
 To run WordPress locally, you don't need Apache, MySQL server, XAMPP, Wamp and Mamp. All you need is Docker
 ### Creating the project
