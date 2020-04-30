@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  dbos:
+    image: mysql:5.7
+    volumes:
+      - mysql_storage_new:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_USER: first
+      MYSQL_PASSWORD: qwerty
+      MYSQL_DATABASE: compose
+      
+  wordpressos:
+    image: wordpress:5.1.1-php7.3-apache
+    restart: always
+    depends_on: 
+      - dbos
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: dbos
+      WORDPRESS_DB_USER: first
+      WORDPRESS_DB_PASSWORD: qwerty
+      WORDPRESS_DB_NAME: compose
+    volumes:
+      - wp_storage_new:/var/www/html
+      
+      
+volumes:
+  wp_storage_new:
+  mysql_storage_new:
